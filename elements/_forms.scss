@@ -1,5 +1,7 @@
 
-%form-styles {}
+%form-styles {
+	background: white;
+}
 
 
 form {}
@@ -7,7 +9,7 @@ form {}
 textarea {
 	@extend %no-webkit;
 	@extend %form-styles;
-	@include placeholders($blue);
+	@include placeholder($blue);
 }
 
 
@@ -19,7 +21,7 @@ input {
  &[type="text"], &[type="email"], &[type="tel"], &[type="url"], &[type="password"] {
  	@extend %no-webkit;
  	@extend %form-styles;
- 	@include placeholders($blue);
+ 	@include placeholder($blue);
  }
 
 	// Submit Button
